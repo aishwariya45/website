@@ -1,31 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mahi Restaurant</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images with Same Size</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-bar {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav-bar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar ul li {
+            display: inline-block;
+            margin-right:20px;
+        }
+
+        .nav-bar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        
+        nav ul li a:hover {
+            background-color: #dd731b;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px; /* Space between images */
+            padding: 20px;
+            flex-wrap: wrap; /* To ensure images wrap if the screen is smaller */
+        }
+
+        .image-container img {
+            width: 23%; /* Fixed width for each image, allowing for some space between */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px;
+            margin-bottom: 10px;
+            object-fit: cover; /* Ensures the image fits the container without stretching */
+        }
+
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Mahi Restaurant</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="administration.html">Our Team</a>
-      <a href="contact.html">Contact Us</a>
+
+    <!-- Top Navigation Bar -->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="restaurant.html" class="nav-link">Home</a></li>
+            <li><a href="menu.html" class="nav-link">Menu</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <li><a href="administration.html" class="nav-link">Administration</a></li>
+        </ul>
     </nav>
-  </header>
-  <main>
-    <section>
-      <h2>Welcome to Mahi Restaurant</h2>
-      <img src="abo.jpeg" alt="Restaurant Image" class="about-image" height="20px" width="20px">  
-      <p>Located in the heart of Chennai, Mahi Restaurant offers a memorable dining experience with a focus on high-quality food and exceptional service. Our mission is to provide a wide variety of delicious dishes made from fresh, locally sourced ingredients in a warm and inviting atmosphere.</p>
-      <p>Whether it's a casual meal or a special occasion, we have something for everyone!</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Mahi</p>
-  </footer>
+
+    <!-- Gallery Title -->
+    <h1>Gallery</h1>
+
+    <!-- Image Gallery Container -->
+    <div class="image-container">
+        <img src="g2.jpeg" alt="Image 1">
+        <img src="g3.jpeg" alt="Image 2">
+        <img src="g5.jpeg" alt="Image 3">
+        <img src="g4.jpeg" alt="Image 4">
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    
 </body>
 </html>

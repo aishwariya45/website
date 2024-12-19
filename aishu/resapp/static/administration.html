@@ -1,42 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Team - MAHI Restaurant</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px ;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #dd731b;
+        }
+
+        /* Menu Section Styles */
+        .container {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #333;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .food-item {
+            background-color: rgb(167, 165, 167);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+            max-width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .food-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .food-item h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .food-item p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .food-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Our Team</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="restaurant.html" class="nav-link">Home</a></li>
+            <li><a href="menu.html" class="nav-link">Menu</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <li><a href="administration.html" class="nav-link">Administration</a></li>
+        </ul>
     </nav>
-  </header>
-  <main>
-    <section>
-      <h2>Meet Our Team</h2>
-      <div class="team">
-        <div class="member">
-          <img src="mahi.jpeg" alt="Mahi - Manager">
-          <p>Mahi - Manager</p>
+
+    <!-- Menu Section -->
+
+<div class="container">
+        <h2>Administration</h2>
+        <div class="menu-items">
+            <div class="food-item">
+                <img src="gener.jpeg" alt="general manager">
+                <h3>MAHI<br> General Manager</h3>
+                
+            </div>
+            <div class="food-item">
+                <img src="sanjeev.jpeg" alt="head chef">
+                <h3>SANJEEV KAPOOR <br> Head Chef</h3>
+                
+            </div>
+            <div class="food-item">
+                <img src="imi.jpeg" alt="Sous chef">
+                <h3>IMTIAZ QURESH <br> Chef</h3>
+
+            </div>
+            <div class="food-item">
+                <img src="sup.jpeg" alt="Seolleongtang">
+                <h3>PRADEEP<br> Restaurant Supervisor</h3>
+
+            </div>
+            <div class="food-item">
+                <img src="mar.jpeg" alt="Tteokbokki">
+                <h3>DavID <br> Marketing Manager</h3>
+
+            </div>
+            <div class="food-item">
+                <img src="fin.jpeg" alt="Haemul Pajeon">
+                <h3>Mobina <br> Finance Manager</h3>
+               
+
         </div>
-        <div class="member">
-          <img src="aishu.jpeg" alt="Aishu - Chef">
-          <p>Aishu - Chef</p>
-        </div>
-        <div class="member">
-          <img src="aishu2.jpeg" alt="Sam Lee - Waiter">
-          <p>Sam Lee - Waiter</p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Mahi</p>
-  </footer>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>MAHIISHU</p>
+    </footer>
 </body>
 </html>
